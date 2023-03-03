@@ -1,0 +1,2 @@
+* Make Magic
+Personal repo for Makefile tricks and things, one stop shop so I don't have to keep repeating myself.
