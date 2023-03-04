@@ -23,10 +23,9 @@ run: main
 	@./main && rm -rf ./main
 
 main: main.c
-	@printf "\033[34m"
-	@printf "COMPILING:\n"
-	@printf "\033[0m"
+	$(call print_in_color, $(CYAN), \nCOMPILING:\n)
 	cc ./main.c $(CFLAGS) -o main
 
+.PHONY: clean
 clean:
 	rm -rf ./main
